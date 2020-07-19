@@ -1,0 +1,13 @@
+<html>
+    <head>
+      <title>{% block title %} Find a Giphy {% endblock %}</title>
+      <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <div>Navigation: <a href="/index">Home</a>
+            <a href="/getChoices">Choices</a>
+            <a href="/results">Result</a>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

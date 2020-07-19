@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Choicess - Find a Giphy{% endblock %}
+{% block content %}
+        <h3>Hello,{{nickname}}! I hear you like {{faveColor}} and think you're {{age}}</h3>
+        <h1>Make your selections from the following for your Giphy</h1>
+         <form method="post" action="/getGifs">
+              <div class = "cell">
+                   <label for="animal"><h3>Favorite Animal </h3></label>
+                  <input type="radio" name="animal" value="basilisk"> Basilisk<br>
+                  <input type="radio" name="animal" value="dragon"> Dragon<br>
+                  <input type="radio" name="animal" value="hippogriff"> Hippogriff
+              </div>
+        <div class = "cell">
+                <label for='hogwarts'><h3>Favorite House at Hogwarts </h3></label>
+                  <input type="radio" name='hogwarts' value="hufflepuff">Hufflepuff<br>
+                  <input type="radio" name="hogwarts" value="ravenclaw"> Ravenclaw<br>
+                  <input type="radio" name='hogwarts' value="slytherin"> Slytherin<br>
+                  <input type="radio" name='hogwarts' value="gryffindor"> Gryffindor
+              </div>
+              <div class = "cell">
+                <label for="colors"><h3>Favorite Colors at Hogwarts </h3></label>
+                <input type="radio" name="colors" value="blue+bronze">Blue and Bronze<br>
+                <input type="radio" name="colors" value="green+silver"> Green and Silver<br>
+                <input type="radio" name="colors" value="yellown+black"> Yellow and Black<br>
+                <input type="radio" name="colors" value="scarlet+gold"> Scarlet and Gold
+              </div>
+              <div class = "cell">
+                  <input type='submit'>
+              </div>
+          </form>
+{% endblock %}

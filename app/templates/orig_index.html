@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <!--<title>{{ title }} - Flask Test</title>-->
+        {% if pagetitle %}
+            <title>{{ pagetitle }} - Shout Your Breakfast</title>
+        {% else %}
+            <title>Welcome to the Breakfast Shouter!</title>
+        {% endif %}
+      <!--<link rel="stylesheet" type="text/css" href="static/index.css">-->
+    </head>
+    <body>
+        <h1>Hello, {{ user.name }}!</h1>
+        <p>We can build a full webpage here</p>
+        <a href = "/secret">Access the secret here</a>
+       <!-- Good reference for form/method/action at:
+       https://www.w3schools.com/tags/att_form_method.asp-->
+        <form method="post" action="/sendBreakfast">
+          <label for="nickname">What's your nickname?</label>
+          <input type='text' name='nickname'>
+          <label for="breakfast">What did you have for breakfast?</label>
+          <input type='text' name='breakfast'>
+          <input type='submit'>
+        </form>
+        <img src="static/micropig.jpg" />
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Find Your Giphy{% endblock %}
+{% block content %}
+  <h1>Enter information below to find the perfect giphy</h1>
+  <hr>
+    <form method="post" action="/getChoices">
+      <div class = "cell">
+        <label for="nname"><h3>Enter your name: </h3></label>
+        <input type='text' name='nname'>
+      </div>
+      <div class = "cell">
+        <label for="breakfast"><h3>Favorite color:</h3></label>
+        <input type='text' name='breakfast'>    
+       </div>
+      <div class = "cell">
+        <label for="age"><h3>Mental age (a number):</h3></label>
+        <input type='value' name='age'>
+       </div>
+       <div class = "cell">
+          <input type='submit'>
+       </div>
+  </form>
+  </div>
+  
+  <img src="static/micropig.jpg" />
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Results - Find a Giphy{% endblock %}
+{% block content %}
+        <h1>Three random results</h1>
+        <ul><h3>You chose:<h3></h3>
+                <li><h3><h3>{{ch1}}</h3></li>
+                <li><h3>{{ch2}}</h3></li>
+               <li><h3>{{ch3}}</h3></li>
+        </ul>
+        {% for p in range(3) %}
+                <img src= {{ photos[p] }}>
+        {% endfor %}
+{% endblock %}
